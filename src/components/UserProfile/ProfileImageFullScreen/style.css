@@ -1,0 +1,15 @@
+.swiper-pagination-bullet {
+	@apply rounded-full bg-white  w-3 h-3 transition-all duration-200 cursor-pointer;
+}
+
+.swiper-pagination-bullet-active {
+	@apply w-8 bg-white;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	@apply h-full top-0 p-5  text-white;
+}

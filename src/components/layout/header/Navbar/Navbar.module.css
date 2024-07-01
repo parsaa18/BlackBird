@@ -1,0 +1,37 @@
+.burger,
+.burgerActive {
+	width: 100%;
+}
+.burger::after,
+.burger::before,
+.burgerActive::after,
+.burgerActive::before {
+	content: "";
+	width: 40%;
+	@apply relative block rounded-full m-auto h-[1px] bg-metricBlack;
+	@apply transition-all duration-300;
+}
+
+.burger::after {
+	top: -5px;
+}
+.burger::before {
+	top: 5px;
+}
+.burgerActive::after {
+	top: -1px;
+	@apply rotate-45;
+}
+.burgerActive::before {
+	top: 1px;
+	@apply -rotate-45;
+}
+.svgCurve{
+	position: absolute;
+	top: 0;
+	left: -99px;
+	width: 250px;
+	height: 100%;
+	fill: rgb(41, 41, 41);
+	stroke: none;
+}

@@ -1,0 +1,21 @@
+/* {
+	@apply w-[500px] h-2 flex items-center rounded-lg bg-gray-200 cursor-pointer;
+}
+
+.track-1 {
+	@apply bg-metricGreen h-full;
+}
+.thumb {
+	@apply border-4 border-white bg-metricGreen rounded-full p-2 outline-none cursor-pointer;
+} */
+
+.MuiSlider-thumb {
+	@apply text-metricPurple;
+	box-shadow: 0 0 4px gray;
+}
+.MuiSlider-rail {
+	color: rgb(131, 131, 131);
+}
+.MuiSlider-track {
+	@apply text-metricPurple;
+}

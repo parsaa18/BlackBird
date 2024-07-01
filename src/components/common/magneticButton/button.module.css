@@ -1,0 +1,7 @@
+.button {
+	@apply rounded-full flex items-center justify-center text-white cursor-pointer overflow-hidden  relative top-0 left-0;
+	box-shadow: 0 0px 1px #00000080;
+}
+.circle {
+	@apply w-full h-[150%] rounded-[50%] absolute top-[100%] bg-[rgb(23,23,23)];
+}

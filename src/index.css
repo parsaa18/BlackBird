@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @apply break-words;
+}
+p,
+h1,
+h2,
+h3,
+h5,
+h6 {
+  @apply text-metricBlack;
+}
+@layer base {
+  body {
+    direction: rtl;
+    /* padding: 20px 30px; */
+    font-family: "IRANSans" !important;
+    line-height: normal;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  @-moz-document url-prefix() {
+    html {
+      scrollbar-width: none;
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .dark,
+  .light {
+    @apply bg-metricWhite;
+  }
+}
+
+@layer base {
+  ::selection {
+    @apply bg-metricPurple text-metricBlack;
+  }
+}
+
+@layer utilities {
+  .ltr {
+    direction: ltr;
+  }
+}
